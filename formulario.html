@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMA Formulario</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+    
+<body>
+    <form action="" method=""> 
+        <img src="./img/logoTMA.jpg" alt="">
+        <fieldset class="datosPersonales">
+
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Introduce tu nombre" required>
+
+            <label for="apellidos">Apellidos</label>
+            <input id="apellidos" type="text"placeholder="Introduce tus apellidos" required>
+
+            <label for="telefono">Número de teléfono</label>
+            <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
+
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento">
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+
+            <label for="sexo">Sexo</label>
+            <div>
+                <input type="radio" name="gender">
+                <label for="gender" class="sexo">Hombre</label>
+            </div>
+                <input type="radio" name="gender">
+                <label for="gender" class="sexo">Mujer</label>
+            
+            
+        </fieldset>
+        <fieldset>
+            <legend>Mensaje</legend>
+            <textarea name="mensaje" id="comments" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Permisos</legend>
+            <div>
+            <input type="checkbox" name="info" required>
+            <label for="datos" class="informacion">He leído el Aviso legal y acepto la Política de privacidad</label>
+            </div>
+            <input type="checkbox" name="info">
+            <label for="publicidad" class="informacion">Quiero suscribirme y acepto recibir información comercial</label>
+
+
+
+        </fieldset>
+        <input type="submit">
+        <p class="clausula">De acuerdo con lo dispuesto en el Reglamento General sobre la Protección de Datos Europeo 2016/679, KMA le informa que los datos de carácter personal que nos proporcione rellenando el presente formulario pasarán a formar parte de nuestra base de datos y que los mismos serán almacenados por nuestro proveedor CRM con total confidencialidad. La finalidad de la recogida y tratamiento de los datos personales que le solicitamos es para comunicaciones digitales de TMA. La legitimación se realiza a través del consentimiento del interesado. Podrá ejercer sus derechos de acceso, rectificación, limitación y suprimir los datos solicitándolo por mail a tma@tma.com</p>
+    </form>
+</body>
+</html>

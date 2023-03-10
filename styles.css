@@ -1,0 +1,376 @@
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cabecera {
+  width: 100%;
+  height: 15vh;
+  background-color: bisque;
+  color: rgb(104, 104, 245);
+}
+
+.cabecera_divLogo {
+  width: 20%;
+  height: 60%;
+}
+
+.cabecera_divLogo-logo {
+  position: relative;
+  height: 80%;
+  width: auto;
+  top: 60%;
+  transform: translate(0%, -50%);
+  left: 40%;
+}
+
+.cabecera_nav {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 8%;
+}
+
+.cabecera_nav-div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  font-weight: bolder;
+  margin-left: 0px;
+}
+
+@media (min-width: 768px) {
+  .cabecera {
+    width: 100vw;
+    height: 15vh;
+    background-color: bisque;
+    color: rgb(104, 104, 245);
+    display: flex;
+  }
+  .cabecera_divLogo {
+    width: 30%;
+    height: 100%;
+  }
+  .cabecera_divLogo-logo {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 50px;
+  }
+  .cabecera_nav {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cabecera_nav-div {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+  }
+  .navDcha {
+    margin-right: 10px;
+  }
+}
+main {
+  height: 75vh;
+  background-color: rgb(222, 235, 235);
+}
+
+.titulo {
+  background-color: rgb(115, 147, 192);
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 36px;
+  }
+}
+.seccion1 {
+  width: 80vw;
+  height: 35vh;
+  margin-left: 10vw;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 3px;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+
+.articuloLogoSeccion1 {
+  background-color: rgb(194, 194, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.articuloDescripcionSeccion1 {
+  background-color: rgb(194, 194, 194);
+  grid-column: 2/5;
+  padding: 5px;
+}
+
+.seccion1_articuloDescripcion-titulo {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  font-weight: bold;
+}
+
+.seccion1_articuloDescripcion-parrafo {
+  display: flex;
+  width: 100%;
+  font-size: small;
+  margin: 0;
+}
+
+.logoSeccion1 {
+  width: 70%;
+  height: 80%;
+}
+
+@media (min-width: 768px) {
+  .seccion1 {
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+  }
+  .seccion1_logo2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .seccion1_logo3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 1/2;
+  }
+  .seccion1_caja1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .seccion1_caja2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .seccion1_caja3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .seccion1_articuloDescripcion-titulo {
+    display: flex;
+    width: 100%;
+    height: 40%;
+  }
+  .seccion1_articuloDescripcion-parrafo {
+    display: flex;
+    width: 100%;
+    font-size: small;
+    margin: 0;
+    padding: 0px;
+  }
+  .logoSeccion1 {
+    height: 80%;
+    width: auto;
+  }
+}
+.seccion2 {
+  width: 80vw;
+  height: 30vh;
+  margin-left: 10vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 12%);
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 5px;
+}
+
+.tituloSeccion2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  grid-column: 1/5;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.articuloSeccion2 {
+  background-color: rgb(194, 194, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arriba {
+  grid-row: 2/4;
+}
+
+.abajo {
+  grid-row: 4/6;
+}
+
+.seccion2Logo {
+  height: 80%;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .seccion2 {
+    box-sizing: border-box;
+    margin-top: 15px;
+    width: 80vw;
+    height: 30vh;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 12%);
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
+  }
+  .tituloSeccion2 {
+    font-size: 24px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+  }
+  .seccion2Logo {
+    height: 80%;
+    width: auto;
+  }
+}
+.footer {
+  background-color: rgb(115, 147, 192);
+  height: 10vh;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+.footer_divIzq {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.footer_divDcha {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8%;
+  font-size: xx-small;
+}
+
+@media (min-width: 768px) {
+  .footer_divIzq {
+    width: 50%;
+    display: flex;
+    padding-top: 20px;
+  }
+  .footer_divDcha {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0%;
+    font-size: xx-small;
+  }
+  .footer_formulario {
+    position: relative;
+    height: 80%;
+    width: auto;
+    top: 30%;
+    transform: translate(0%, -50%);
+    left: 2%;
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */

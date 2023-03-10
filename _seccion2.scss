@@ -1,0 +1,60 @@
+.seccion2{
+    width: 80vw;
+    height: 30vh;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 12%);
+    column-gap: 5px;
+    row-gap: 5px;  
+}
+.tituloSeccion2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    @include centrarContenido;
+    height: 80%;
+}
+.articuloSeccion2{
+    background-color:$colorFondoArticuloSeccion2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arriba{
+    grid-row: 2/4;
+}
+.abajo{
+    grid-row: 4/6;
+}
+.seccion2Logo{
+    height: 80%;
+    width: auto;
+}
+@media(min-width:768px){
+    .seccion2{
+        box-sizing: border-box;
+        margin-top: 15px;
+        width: 80vw;
+        height: 30vh;
+        margin-left: 10vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 12%);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .tituloSeccion2{
+        font-size: 24px;
+        grid-column: 1/5;
+        grid-row: 1/2;
+        @include centrarContenido;
+        height: 60%;
+    }
+    .seccion2Logo{
+        height: 80%;
+        width: auto;
+    }
+}

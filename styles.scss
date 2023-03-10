@@ -1,0 +1,14 @@
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:inherit;
+}
+@import "reset";
+@import "var";
+@import "cabecera";
+@import "seccionMain";
+@import "titulo";
+@import "seccion1";
+@import "seccion2";
+@import "footer";
+
+

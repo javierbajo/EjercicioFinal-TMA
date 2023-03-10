@@ -1,0 +1,49 @@
+
+.footer{
+   background-color: $colorFondoTitulo;
+    height: 10vh;
+    width: 100%;
+    color: white;
+    display: flex;
+
+}
+
+.footer_divIzq{
+width: 60%;
+display: flex;
+justify-content: center;
+padding-top: 5%;
+}
+.footer_divDcha{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8%;
+    font-size: xx-small;
+}
+
+@media(min-width:768px){
+    .footer_divIzq{
+        width: 50%;
+        display: flex;
+        padding-top: 20px;
+  
+        }
+
+        .footer_divDcha{
+            width: 50%;
+            @include centrarContenido;
+            padding-right: 0%;
+            font-size: xx-small;
+        }
+        .footer_formulario{
+            position: relative;
+            height: 80%;
+            width: auto;
+            top: 30%;
+            transform: translate(0%, -50%);
+            left: 2%;
+            font-size: 30px;
+        }
+}

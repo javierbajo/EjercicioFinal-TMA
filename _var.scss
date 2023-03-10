@@ -1,0 +1,30 @@
+
+//VARIABLES CABECERA
+$colorFondoCabecera: bisque;
+$colorNavegadorCabecera: rgb(104, 104, 245);
+
+//VARIABLES MAIN
+$colorMain: rgb(222, 235, 235);
+
+//VARIABLES TÍTULO
+$colorTitulo: whitesmoke;
+$colorFondoTitulo: rgb(115, 147, 192);
+
+//VARIABLES SECCIÓN 1
+$colorFondoArticuloSeccion1: rgb(194, 194, 194);
+
+//VARIABLES SECCIÓN 2
+$colorFondoArticuloSeccion2: rgb(194, 194, 194);
+
+//MIXSINs
+@mixin centrarContenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centrarContenidoSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
